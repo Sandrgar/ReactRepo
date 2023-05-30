@@ -1,15 +1,11 @@
-import React from "react"
+import React from "react";
 
 export class Welcome extends React.Component {
-    static defaultProps = {
-        name: <strong>Mario</strong>
-    }
     render() {
-        return (
+        return(
             <div>
-                <p>Hello, {this.props.name}! </p>
+                <p>{this.props.name}</p>
             </div>
         )
-
     }
 }
