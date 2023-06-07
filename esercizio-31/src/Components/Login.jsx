@@ -9,10 +9,10 @@ export function Login() {
     })
 
     function handleInputChange(event){
-        const  {name, type, value, checked} = event.target
+        const {name, type, value, checked} = event.target
 
-        setData((prevData) => ({
-            ...prevData,
+        setData((data) => ({
+            ...data,
             [name]: type === "checkbox" ? checked : value,
           }));
           console.log(data)
