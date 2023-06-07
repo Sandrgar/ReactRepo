@@ -13,7 +13,7 @@ export function Login() {
 
         setData((data) => ({
             ...data,
-            [name]: type === "checkbox" ? checked : value,
+            [name]: type === "checkbox" ? checked : value
           }));
           console.log(data)
     }
@@ -22,7 +22,7 @@ export function Login() {
         <form>
             <input onChange={handleInputChange} name="username" value={data.username}/>
             <input onChange={handleInputChange} name="password" value={data.password} type="password"/>
-            <input onChange={handleInputChange} name="remember" value={data.remember} type="checkbox" />
+            <input onChange={handleInputChange} name="remember" checked={data.remember} type="checkbox" />
         </form>
     )
 }
