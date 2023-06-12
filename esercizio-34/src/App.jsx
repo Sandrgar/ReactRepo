@@ -1,12 +1,12 @@
-import ClickCounter from "./components/ClickCounter"
+import GithubUser from "./components/GithubUser"
 
 
 function App() {
-  
+ 
 
   return (
     <>
-      <ClickCounter />
+      <GithubUser username="Sandrgar"/>
     </>
   )
 }
