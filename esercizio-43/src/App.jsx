@@ -18,10 +18,6 @@ function App() {
   }
   ]
 
- 
-
-
-
   return (
     <>
       <FiltredList arg={list}/>
