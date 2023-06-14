@@ -10,8 +10,15 @@ function Form({initialData}) {
     const formRef = useRef()
 
     useEffect(() => {
-    formRef.current.reset()
-    },[form.model || form.year || form.color])
+        return function handleReset(){
+            setForm({
+                model:"",
+                year:"",
+                color:"" 
+            })
+        }
+    
+    },[initialData])
 
     const modelRef = useRef()
     const yearRef = useRef()
