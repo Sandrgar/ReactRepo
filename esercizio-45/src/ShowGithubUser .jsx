@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 function ShowGithubUser () {
   return (
     <div>
-        <Link to="users/:username">Link</Link>
+        <Link to="/:username">Link</Link>
     </div>
   )
 }

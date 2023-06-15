@@ -10,7 +10,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<ShowGitHubUser />} />
-        <Route path="users/:username" element={<GithubUser />} />
+        <Route path="/users:username" element={<ShowGitHubUser />} />
+        <Route path="/:username" element={<GithubUser />} />
       </Routes>
     </>
   )

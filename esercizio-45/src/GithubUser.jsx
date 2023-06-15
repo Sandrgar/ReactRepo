@@ -1,18 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, } from 'react'
+import { useParams } from 'react-router-dom'
 
 
 function GithubUser() {
+    const {users: username="sandrgar"} = useParams()
     const [users, setUsers] = useState()
-
+  
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch(`https://api.github.com/users/Sandrgar`)
+            const response = await fetch(`https://api.github.com/users/${username}`)
             const data = await response.json()
             setUsers(data)
-            console.log(data)
+            
         }
         fetchData()
-    }, [])
+    }, [username])
 
     return (
         <div>
