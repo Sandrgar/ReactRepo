@@ -1,4 +1,4 @@
-import FiltredList from "./components/FiltredList"
+import Component from "./components/Component"
 
 function App() {
   const list = [{
